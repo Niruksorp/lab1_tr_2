@@ -14,22 +14,22 @@ public class InitServiceImpl implements InitService {
         transitionTable[DFAStates.q2.getState()][EnumAlphabet.b.getState()] = DFAStates.q5;
 
         transitionTable[DFAStates.q3.getState()][EnumAlphabet.a.getState()] = DFAStates.q0;
-        transitionTable[DFAStates.q3.getState()][EnumAlphabet.b.getState()] = DFAStates.q4;
+        transitionTable[DFAStates.q3.getState()][EnumAlphabet.b.getState()] = DFAStates.q6;
 
-        transitionTable[DFAStates.q4.getState()][EnumAlphabet.a.getState()] = DFAStates.q2;
-        transitionTable[DFAStates.q4.getState()][EnumAlphabet.b.getState()] = DFAStates.q0;
+        transitionTable[DFAStates.q4.getState()][EnumAlphabet.a.getState()] = DFAStates.q5;
+        transitionTable[DFAStates.q4.getState()][EnumAlphabet.b.getState()] = DFAStates.q3;
 
-        transitionTable[DFAStates.q5.getState()][EnumAlphabet.a.getState()] = DFAStates.q1;
+        transitionTable[DFAStates.q5.getState()][EnumAlphabet.a.getState()] = DFAStates.q8;
         transitionTable[DFAStates.q5.getState()][EnumAlphabet.b.getState()] = DFAStates.q0;
 
         transitionTable[DFAStates.q6.getState()][EnumAlphabet.a.getState()] = DFAStates.q2;
         transitionTable[DFAStates.q6.getState()][EnumAlphabet.b.getState()] = DFAStates.q0;
 
         transitionTable[DFAStates.q7.getState()][EnumAlphabet.a.getState()] = DFAStates.q6;
-        transitionTable[DFAStates.q7.getState()][EnumAlphabet.b.getState()] = DFAStates.q4;
+        transitionTable[DFAStates.q7.getState()][EnumAlphabet.b.getState()] = DFAStates.q8;
 
-        transitionTable[DFAStates.q7.getState()][EnumAlphabet.a.getState()] = DFAStates.q0;
-        transitionTable[DFAStates.q7.getState()][EnumAlphabet.b.getState()] = DFAStates.q0;
+        transitionTable[DFAStates.q8.getState()][EnumAlphabet.a.getState()] = DFAStates.q4;
+        transitionTable[DFAStates.q8.getState()][EnumAlphabet.b.getState()] = DFAStates.q1;
         return transitionTable;
     }
 
@@ -38,7 +38,6 @@ public class InitServiceImpl implements InitService {
         return List.of(
                 DFAStates.q1,
                 DFAStates.q3,
-                DFAStates.q4,
                 DFAStates.q6);
     }
 
