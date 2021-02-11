@@ -1,3 +1,5 @@
+package ru.sfu.Entity;
+
 public enum DFAStates {
     q0(0),
     q1(1),

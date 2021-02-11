@@ -1,3 +1,9 @@
+package ru.sfu.Init;
+
+import ru.sfu.Entity.DFAStates;
+import ru.sfu.Entity.EnumAlphabet;
+import ru.sfu.Init.InitService;
+
 import java.util.List;
 
 public class InitServiceImpl implements InitService {

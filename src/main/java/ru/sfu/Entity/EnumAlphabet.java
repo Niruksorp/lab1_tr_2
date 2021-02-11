@@ -1,3 +1,5 @@
+package ru.sfu.Entity;
+
 public enum EnumAlphabet {
     a(0),
     b(1);

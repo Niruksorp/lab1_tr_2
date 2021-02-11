@@ -1,3 +1,7 @@
+package ru.sfu.Init;
+
+import ru.sfu.Entity.DFAStates;
+
 import java.util.List;
 
 public interface InitService {
